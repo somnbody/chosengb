@@ -1,0 +1,9 @@
+{
+  "_resourceType": "music",
+  "id": "9e175ef9-6a54-4066-9d09-1c8ae980748a",
+  "name": "Gameplay",
+  "symbol": "song_song_template",
+  "filename": "Gameplay.uge",
+  "settings": {},
+  "type": "uge"
+}

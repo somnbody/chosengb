@@ -1,0 +1,323 @@
+{
+  "_resourceType": "scene",
+  "id": "51e286e3-eff4-4d3f-bcde-e8d93f1c6b28",
+  "_index": 3,
+  "name": "Prophecy",
+  "backgroundId": "d10b8093-55bd-473d-88b4-6d2233ee5944",
+  "tilesetId": "",
+  "width": 20,
+  "height": 18,
+  "type": "TOPDOWN",
+  "paletteIds": [
+    "default-bg-2"
+  ],
+  "spritePaletteIds": [],
+  "collisions": "00168+",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_5",
+  "x": 60,
+  "y": 196.74272476398392,
+  "script": [
+    {
+      "command": "EVENT_RESET_VARIABLES",
+      "args": {
+        "__collapse": true
+      },
+      "id": "15118057-1201-4b7c-a132-a066b946dd6e"
+    },
+    {
+      "command": "EVENT_RNG_SEED",
+      "args": {
+        "__collapse": true
+      },
+      "id": "4b489dcb-560a-4a92-92da-453977c2e2ac"
+    },
+    {
+      "command": "EVENT_TEXT_DRAW",
+      "args": {
+        "text": "The legend foretold\nthe hero travels\nto",
+        "x": 1,
+        "y": 2,
+        "location": "background",
+        "__collapse": true
+      },
+      "id": "8637b84f-91ec-45b6-94cc-541d863eb83c"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "27",
+        "value": {
+          "type": "rnd",
+          "value": {
+            "type": "number",
+            "value": 7
+          }
+        },
+        "__collapse": true
+      },
+      "id": "a095b154-b68d-49c7-8802-b0e5e496e92e"
+    },
+    {
+      "id": "597f6817-71d7-4a31-a622-ba98dd76e1c6",
+      "command": "EVENT_GROUP",
+      "args": {
+        "__label": "RollChosen",
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "L2",
+              "value": {
+                "type": "rnd",
+                "value": {
+                  "type": "number",
+                  "value": 3
+                }
+              },
+              "__collapse": false
+            },
+            "id": "80b473af-fa38-4b9d-853b-f3af1303399d"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": 0.2,
+              "frames": 30,
+              "__collapse": false
+            },
+            "id": "feb47769-8014-4f3f-9038-182bbdbd9a7b"
+          }
+        ]
+      }
+    },
+    {
+      "command": "EVENT_SWITCH",
+      "args": {
+        "variable": "L2",
+        "choices": 4,
+        "__collapseCase0": false,
+        "value0": 0,
+        "__collapseCase1": true,
+        "value1": 1,
+        "__collapseCase2": false,
+        "value2": 2,
+        "__collapseCase3": false,
+        "value3": 3,
+        "__collapseCase4": false,
+        "value4": 5,
+        "__collapseCase5": false,
+        "value5": 6,
+        "__collapseCase6": false,
+        "value6": 7,
+        "__collapseCase7": false,
+        "value7": 8,
+        "__collapseCase8": false,
+        "value8": 9,
+        "__collapseCase9": false,
+        "value9": 10,
+        "__collapseCase10": false,
+        "value10": 11,
+        "__collapseCase11": false,
+        "value11": 12,
+        "__collapseCase12": false,
+        "value12": 13,
+        "__collapseCase13": false,
+        "value13": 14,
+        "__collapseCase14": false,
+        "value14": 15,
+        "__collapseCase15": false,
+        "value15": 16,
+        "__collapseElse": false,
+        "__collapse": true,
+        "__label": "Pilgramage"
+      },
+      "children": {
+        "true0": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "19",
+              "value": {
+                "type": "number",
+                "value": 0
+              }
+            },
+            "id": "884a1d95-1f71-4506-83ec-d3b9b8c2927d"
+          },
+          {
+            "command": "EVENT_TEXT_DRAW",
+            "args": {
+              "text": "the stone,",
+              "x": 4,
+              "y": 4,
+              "location": "background",
+              "__collapse": false
+            },
+            "id": "44934c69-3065-46f9-966c-3db45358b195"
+          }
+        ],
+        "true1": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "19",
+              "value": {
+                "type": "number",
+                "value": 1
+              }
+            },
+            "id": "c374bd1f-aa94-4cb1-9495-1bc0a9696b6e"
+          },
+          {
+            "command": "EVENT_TEXT_DRAW",
+            "args": {
+              "text": "the flame,",
+              "x": 4,
+              "y": 4,
+              "location": "background",
+              "__collapse": false
+            },
+            "id": "5a30e7f2-f282-4072-9b27-79e8362822ce"
+          }
+        ],
+        "true2": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "19",
+              "value": {
+                "type": "number",
+                "value": 2
+              }
+            },
+            "id": "5cab376d-4d17-4da6-b003-5f4f91f4f751"
+          },
+          {
+            "command": "EVENT_TEXT_DRAW",
+            "args": {
+              "text": "the tomb,",
+              "x": 4,
+              "y": 4,
+              "location": "background",
+              "__collapse": false
+            },
+            "id": "504bd938-e58d-4b7d-a5fb-7821652b9dc2"
+          }
+        ],
+        "true3": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "19",
+              "value": {
+                "type": "number",
+                "value": 3
+              }
+            },
+            "id": "59bcd8da-5e4a-4403-a273-3ce8cd34c36f"
+          },
+          {
+            "command": "EVENT_TEXT_DRAW",
+            "args": {
+              "text": "the rune,",
+              "x": 4,
+              "y": 4,
+              "location": "background",
+              "__collapse": false
+            },
+            "id": "c4f6c39f-821b-44fd-be2e-f47323703725"
+          }
+        ],
+        "true4": [],
+        "true5": [],
+        "true6": [],
+        "true7": [],
+        "true8": [],
+        "true9": [],
+        "true10": [],
+        "true11": [],
+        "true12": [],
+        "true13": [],
+        "true14": [],
+        "true15": [],
+        "false": []
+      },
+      "id": "7a4a008b-c2a8-473d-8509-bbaa0224c5da"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "b",
+          "left",
+          "up",
+          "down",
+          "right",
+          "a",
+          "start",
+          "select"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "32206cc2-2237-47a7-8967-a3bc260060c5",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": 0
+              },
+              "direction": "",
+              "fadeSpeed": 1
+            },
+            "id": "8c53a2ba-9f93-4270-b865-8645d0efa6f5"
+          }
+        ]
+      },
+      "id": "98e5f043-874b-4b70-87f0-bc8c2f10bcbd"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 3,
+        "frames": 30,
+        "__collapse": true
+      },
+      "id": "30409740-be46-4314-9201-181869900494"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "32206cc2-2237-47a7-8967-a3bc260060c5",
+        "x": {
+          "type": "number",
+          "value": 23
+        },
+        "y": {
+          "type": "number",
+          "value": 11
+        },
+        "direction": "",
+        "fadeSpeed": "2",
+        "__collapse": true
+      },
+      "id": "a6ad887a-d787-4c9d-b4cb-a1095ddcf300"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "autoFadeEventCollapse": true,
+  "playerSpriteSheetId": "f4f83043-f834-411f-a2e5-0142912d48b9"
+}

@@ -1,0 +1,132 @@
+{
+  "_resourceType": "scene",
+  "id": "338b4ac9-1e29-4450-85ba-52aea11b17e4",
+  "_index": 7,
+  "name": "Title",
+  "backgroundId": "eae49c0b-b624-4130-a727-53de789b9d2c",
+  "tilesetId": "",
+  "width": 20,
+  "height": 18,
+  "type": "TOPDOWN",
+  "paletteIds": [
+    "default-bg-2",
+    ""
+  ],
+  "spritePaletteIds": [],
+  "collisions": "00168+",
+  "autoFadeSpeed": 5,
+  "symbol": "scene_9",
+  "x": 399.01056565350154,
+  "y": 605.4550938048732,
+  "script": [
+    {
+      "command": "EVENT_RESET_VARIABLES",
+      "args": {},
+      "id": "b2a41162-b9f3-42a1-9000-efd57668822e"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "b",
+          "start",
+          "a",
+          "select",
+          "right",
+          "down",
+          "up",
+          "left"
+        ],
+        "override": true,
+        "__scriptTabs": "press",
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_FADE_OUT",
+            "args": {
+              "speed": 3
+            },
+            "id": "6b03640e-4332-4fbd-b49f-8cde861c8aef"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "51e286e3-eff4-4d3f-bcde-e8d93f1c6b28",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": 0
+              },
+              "direction": "",
+              "fadeSpeed": "2"
+            },
+            "id": "928915a6-5232-4820-941d-21665fcf48aa"
+          }
+        ]
+      },
+      "id": "a53e803d-f4ba-44a4-a9e6-eafb2dc4d835"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          " THE CHOSEN \nOF THE GROVE"
+        ],
+        "__section": "behavior",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 4,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": false,
+        "speedIn": 0,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "any",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30,
+        "__collapse": true
+      },
+      "id": "903aa5c5-46fb-4c67-bf01-98a7fd8e7337"
+    },
+    {
+      "command": "EVENT_FADE_OUT",
+      "args": {
+        "speed": 3,
+        "__collapse": true
+      },
+      "id": "77b50fb2-8b59-4966-857e-9f5ed519cb95"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "51e286e3-eff4-4d3f-bcde-e8d93f1c6b28",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "direction": "",
+        "fadeSpeed": "2",
+        "__collapse": true
+      },
+      "id": "b0529a74-1869-4b00-804b-6ae5eacf46eb"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "playerSpriteSheetId": "f4f83043-f834-411f-a2e5-0142912d48b9",
+  "autoFadeEventCollapse": true
+}

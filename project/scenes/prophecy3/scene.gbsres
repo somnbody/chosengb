@@ -1,0 +1,254 @@
+{
+  "_resourceType": "scene",
+  "id": "44a2bdbb-075f-4864-b44e-bbf7e35cc63e",
+  "_index": 5,
+  "name": "Prophecy3",
+  "backgroundId": "d10b8093-55bd-473d-88b4-6d2233ee5944",
+  "tilesetId": "",
+  "width": 20,
+  "height": 18,
+  "type": "TOPDOWN",
+  "paletteIds": [
+    "default-bg-2"
+  ],
+  "spritePaletteIds": [],
+  "collisions": "00168+",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_7",
+  "x": 60,
+  "y": 583.2876981854735,
+  "script": [
+    {
+      "id": "35cbf193-00e7-4716-973e-0b79a56a5773",
+      "command": "EVENT_GROUP",
+      "args": {
+        "__label": "RollChosen",
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "L3",
+              "value": {
+                "type": "rnd",
+                "value": {
+                  "type": "number",
+                  "value": 3
+                }
+              },
+              "__collapse": true
+            },
+            "id": "d3abc627-e37d-442c-8837-e81a9513951b"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": 0.2,
+              "frames": 30,
+              "__collapse": false
+            },
+            "id": "d110fffe-6228-4b1d-9557-c94b087303ad"
+          }
+        ]
+      }
+    },
+    {
+      "command": "EVENT_TEXT_DRAW",
+      "args": {
+        "text": "bearing the gift of",
+        "x": 1,
+        "y": 9,
+        "location": "background",
+        "__collapse": true
+      },
+      "id": "f1575a62-aff4-4ac5-a38b-fd273bcf6892"
+    },
+    {
+      "command": "EVENT_SWITCH",
+      "args": {
+        "variable": "L3",
+        "choices": 4,
+        "__collapseCase0": false,
+        "value0": 0,
+        "__collapseCase1": false,
+        "value1": 1,
+        "__collapseCase2": false,
+        "value2": 2,
+        "__collapseCase3": false,
+        "value3": 3,
+        "__collapseCase4": false,
+        "value4": 5,
+        "__collapseCase5": false,
+        "value5": 6,
+        "__collapseCase6": false,
+        "value6": 7,
+        "__collapseCase7": false,
+        "value7": 8,
+        "__collapseCase8": false,
+        "value8": 9,
+        "__collapseCase9": false,
+        "value9": 10,
+        "__collapseCase10": false,
+        "value10": 11,
+        "__collapseCase11": false,
+        "value11": 12,
+        "__collapseCase12": false,
+        "value12": 13,
+        "__collapseCase13": false,
+        "value13": 14,
+        "__collapseCase14": false,
+        "value14": 15,
+        "__collapseCase15": false,
+        "value15": 16,
+        "__collapseElse": false,
+        "__collapse": false,
+        "__label": "Offering"
+      },
+      "children": {
+        "true0": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "21",
+              "value": {
+                "type": "number",
+                "value": 0
+              }
+            },
+            "id": "4996df7a-a236-4781-8ae8-d92dc2976de8"
+          },
+          {
+            "command": "EVENT_TEXT_DRAW",
+            "args": {
+              "text": "the spinning coin,",
+              "x": 1,
+              "y": 10,
+              "location": "background",
+              "__collapse": false
+            },
+            "id": "c8ce1d83-9579-4391-90bb-89a66a3f4f2b"
+          }
+        ],
+        "true1": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "21",
+              "value": {
+                "type": "number",
+                "value": 1
+              }
+            },
+            "id": "2c2b43f7-784f-4a8f-b2d4-3e48971ee10d"
+          },
+          {
+            "command": "EVENT_TEXT_DRAW",
+            "args": {
+              "text": "the burning flame,",
+              "x": 1,
+              "y": 10,
+              "location": "background",
+              "__collapse": false
+            },
+            "id": "b2a48732-a46e-4204-8128-0c8877d04d68"
+          }
+        ],
+        "true2": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "21",
+              "value": {
+                "type": "number",
+                "value": 2
+              }
+            },
+            "id": "36ca5f7b-89f9-40e5-b502-48ab9658e6bf"
+          },
+          {
+            "command": "EVENT_TEXT_DRAW",
+            "args": {
+              "text": "the bloodstar,",
+              "x": 1,
+              "y": 10,
+              "location": "background",
+              "__collapse": false
+            },
+            "id": "a631a964-4dea-40f6-8821-e048e1addc67"
+          }
+        ],
+        "true3": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "21",
+              "value": {
+                "type": "number",
+                "value": 3
+              }
+            },
+            "id": "8cef342f-fd17-4cd0-b3da-cb50ddf11b47"
+          },
+          {
+            "command": "EVENT_TEXT_DRAW",
+            "args": {
+              "text": "a 5-sided crystal,",
+              "x": 1,
+              "y": 10,
+              "location": "background",
+              "__collapse": false
+            },
+            "id": "31d3fbad-cec4-4a3b-97cd-45265c9ff531"
+          }
+        ],
+        "true4": [],
+        "true5": [],
+        "true6": [],
+        "true7": [],
+        "true8": [],
+        "true9": [],
+        "true10": [],
+        "true11": [],
+        "true12": [],
+        "true13": [],
+        "true14": [],
+        "true15": [],
+        "false": []
+      },
+      "id": "e5bb06b6-0dd2-47c1-8490-6849eca78e25"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 3,
+        "frames": 30,
+        "__collapse": true
+      },
+      "id": "8c9adc81-9fa0-4d4e-8daa-c7fd687389ae"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "47ac882e-debe-42e9-8d55-1205784ba9b1",
+        "x": {
+          "type": "number",
+          "value": 23
+        },
+        "y": {
+          "type": "number",
+          "value": 11
+        },
+        "direction": "",
+        "fadeSpeed": "2",
+        "__collapse": false
+      },
+      "id": "276cabba-4c89-4644-a3f6-7e8053badb3f"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "playerSpriteSheetId": "f4f83043-f834-411f-a2e5-0142912d48b9"
+}

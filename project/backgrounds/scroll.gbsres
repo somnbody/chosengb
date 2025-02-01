@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "d10b8093-55bd-473d-88b4-6d2233ee5944",
+  "name": "scroll",
+  "symbol": "bg_scroll",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "scroll.png",
+  "tileColors": "",
+  "autoColor": false
+}

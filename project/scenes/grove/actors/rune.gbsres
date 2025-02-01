@@ -1,0 +1,39 @@
+{
+  "_resourceType": "actor",
+  "id": "c060903f-f3e6-422e-9fa4-55ef0a1c4170",
+  "name": "Rune",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "f90e8ec2-50d0-426c-9db0-6b51d48b59ae",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 255,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "1",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_2",
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_ACTOR_SET_COLLISION_BOX",
+      "args": {
+        "actorId": "$self$",
+        "x": 0,
+        "y": 0,
+        "width": 16,
+        "height": 16
+      },
+      "id": "1683ba69-750b-4f02-86ec-8dc6fea4326b"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 15,
+  "y": 12,
+  "_index": 2
+}

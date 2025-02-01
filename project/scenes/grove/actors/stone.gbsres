@@ -1,0 +1,39 @@
+{
+  "_resourceType": "actor",
+  "id": "64dd63a6-fad3-446f-8e38-562e208b5fdb",
+  "name": "Stone",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "d985697d-9af7-4429-bdb0-2af29e1f1360",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 255,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "1",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_3",
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_ACTOR_SET_COLLISION_BOX",
+      "args": {
+        "actorId": "$self$",
+        "x": 0,
+        "y": 0,
+        "width": 16,
+        "height": 16
+      },
+      "id": "7780ca2d-3e18-412a-82bb-17d3182ff4bd"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 9,
+  "y": 12,
+  "_index": 3
+}

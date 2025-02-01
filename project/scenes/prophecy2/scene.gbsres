@@ -1,0 +1,286 @@
+{
+  "_resourceType": "scene",
+  "id": "32206cc2-2237-47a7-8967-a3bc260060c5",
+  "_index": 4,
+  "name": "Prophecy2",
+  "backgroundId": "d10b8093-55bd-473d-88b4-6d2233ee5944",
+  "tilesetId": "",
+  "width": 20,
+  "height": 18,
+  "type": "TOPDOWN",
+  "paletteIds": [
+    "default-bg-2"
+  ],
+  "spritePaletteIds": [],
+  "collisions": "00168+",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_6",
+  "x": 60,
+  "y": 383.273147984819,
+  "script": [
+    {
+      "id": "5d20ec2f-6dea-41cf-9b1e-73d4f416df3c",
+      "command": "EVENT_GROUP",
+      "args": {
+        "__label": "RollChosen",
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "L3",
+              "value": {
+                "type": "rnd",
+                "value": {
+                  "type": "number",
+                  "value": 3
+                }
+              },
+              "__collapse": true
+            },
+            "id": "6245b3ae-f7f0-4080-aff5-d310df0f2172"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": 0.2,
+              "frames": 30,
+              "__collapse": false
+            },
+            "id": "2c1cabdb-b678-4673-90d3-c86f487c9acd"
+          }
+        ]
+      }
+    },
+    {
+      "command": "EVENT_TEXT_DRAW",
+      "args": {
+        "text": "performs the sacred",
+        "x": 1,
+        "y": 6,
+        "location": "background",
+        "__collapse": true
+      },
+      "id": "1dac3241-5446-4dbc-8861-bdae884dc563"
+    },
+    {
+      "command": "EVENT_SWITCH",
+      "args": {
+        "variable": "L3",
+        "choices": 4,
+        "__collapseCase0": false,
+        "value0": 0,
+        "__collapseCase1": false,
+        "value1": 1,
+        "__collapseCase2": false,
+        "value2": 2,
+        "__collapseCase3": false,
+        "value3": 3,
+        "__collapseCase4": false,
+        "value4": 5,
+        "__collapseCase5": false,
+        "value5": 6,
+        "__collapseCase6": false,
+        "value6": 7,
+        "__collapseCase7": false,
+        "value7": 8,
+        "__collapseCase8": false,
+        "value8": 9,
+        "__collapseCase9": false,
+        "value9": 10,
+        "__collapseCase10": false,
+        "value10": 11,
+        "__collapseCase11": false,
+        "value11": 12,
+        "__collapseCase12": false,
+        "value12": 13,
+        "__collapseCase13": false,
+        "value13": 14,
+        "__collapseCase14": false,
+        "value14": 15,
+        "__collapseCase15": false,
+        "value15": 16,
+        "__collapseElse": false,
+        "__collapse": true,
+        "__label": "Ceremony"
+      },
+      "children": {
+        "true0": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "20",
+              "value": {
+                "type": "number",
+                "value": 0
+              }
+            },
+            "id": "9cecd66b-0bf2-41f1-97a9-2944f1a900c7"
+          },
+          {
+            "command": "EVENT_TEXT_DRAW",
+            "args": {
+              "text": "ritual dance",
+              "x": 1,
+              "y": 7,
+              "location": "background",
+              "__collapse": false
+            },
+            "id": "82374cb0-ca1b-464d-ad28-7fd857c4ecdd"
+          },
+          {
+            "command": "EVENT_ACTOR_EMOTE",
+            "args": {
+              "actorId": "$self$",
+              "emoteId": "9df5f63f-ea47-447e-9b14-cb2dbafb697d"
+            },
+            "id": "4525241a-6753-48f0-9648-5b42673495dd"
+          }
+        ],
+        "true1": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "20",
+              "value": {
+                "type": "number",
+                "value": 1
+              }
+            },
+            "id": "1fb34d04-5e5c-4351-8fc5-a2fd0ac857f8"
+          },
+          {
+            "command": "EVENT_TEXT_DRAW",
+            "args": {
+              "text": "North-South",
+              "x": 1,
+              "y": 7,
+              "location": "background",
+              "__collapse": false
+            },
+            "id": "10080c6e-5382-4bd7-ad64-f485e84affcd"
+          },
+          {
+            "command": "EVENT_ACTOR_EMOTE",
+            "args": {
+              "actorId": "$self$",
+              "emoteId": "9df5f63f-ea47-447e-9b14-cb2dbafb697d"
+            },
+            "id": "8ecf3e1c-397d-4b01-9524-98e039c04211"
+          }
+        ],
+        "true2": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "20",
+              "value": {
+                "type": "number",
+                "value": 2
+              }
+            },
+            "id": "eab3ef80-ab5e-400e-824e-953a507eee6b"
+          },
+          {
+            "command": "EVENT_TEXT_DRAW",
+            "args": {
+              "text": "East-West",
+              "x": 1,
+              "y": 7,
+              "location": "background",
+              "__collapse": false
+            },
+            "id": "32082e8c-78a3-4d09-8e29-1aef68331b5f"
+          },
+          {
+            "command": "EVENT_ACTOR_EMOTE",
+            "args": {
+              "actorId": "$self$",
+              "emoteId": "9df5f63f-ea47-447e-9b14-cb2dbafb697d"
+            },
+            "id": "9283fb04-f9ec-4678-b361-12c09b309c8e"
+          }
+        ],
+        "true3": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "20",
+              "value": {
+                "type": "number",
+                "value": 3
+              }
+            },
+            "id": "933c4d62-83ff-4aba-8675-fe8d08c5a38f"
+          },
+          {
+            "command": "EVENT_TEXT_DRAW",
+            "args": {
+              "text": "silent sleep",
+              "x": 1,
+              "y": 7,
+              "location": "background",
+              "__collapse": false
+            },
+            "id": "eeab5d2c-2fef-4c96-8411-4af7a55b3864"
+          },
+          {
+            "command": "EVENT_ACTOR_EMOTE",
+            "args": {
+              "actorId": "$self$",
+              "emoteId": "9df5f63f-ea47-447e-9b14-cb2dbafb697d"
+            },
+            "id": "d92c6f07-9726-4847-af1a-54148d3b2f13"
+          }
+        ],
+        "true4": [],
+        "true5": [],
+        "true6": [],
+        "true7": [],
+        "true8": [],
+        "true9": [],
+        "true10": [],
+        "true11": [],
+        "true12": [],
+        "true13": [],
+        "true14": [],
+        "true15": [],
+        "false": []
+      },
+      "id": "c0aeddf9-c626-4061-8f96-cd438eaba62f"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 3,
+        "frames": 30,
+        "__collapse": true
+      },
+      "id": "2e0fc2c8-6064-4fa0-a1ac-91a73825f29c"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "44a2bdbb-075f-4864-b44e-bbf7e35cc63e",
+        "x": {
+          "type": "number",
+          "value": 23
+        },
+        "y": {
+          "type": "number",
+          "value": 11
+        },
+        "direction": "",
+        "fadeSpeed": "2",
+        "__collapse": false
+      },
+      "id": "91c5ca12-068e-435c-9d6f-aaf2deff82cd"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "playerSpriteSheetId": "f4f83043-f834-411f-a2e5-0142912d48b9"
+}

@@ -1,0 +1,39 @@
+{
+  "_resourceType": "actor",
+  "id": "16a09d93-b985-4db0-a1d1-ee0da9bfbbd1",
+  "name": "Torch",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "81fb6287-0ccb-4e67-91dd-61e45dfaf62b",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 255,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "1",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_1",
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_ACTOR_SET_COLLISION_BOX",
+      "args": {
+        "actorId": "$self$",
+        "x": 0,
+        "y": 0,
+        "width": 16,
+        "height": 16
+      },
+      "id": "32397cf5-faef-49de-be24-fcad86bffa70"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 14,
+  "y": 8,
+  "_index": 1
+}

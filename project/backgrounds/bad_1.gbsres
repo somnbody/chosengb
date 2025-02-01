@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "4b38cc2d-f5c1-4943-8404-580b90621609",
+  "name": "bad_1",
+  "symbol": "bg_bad_1",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "bad_1.png",
+  "tileColors": "",
+  "autoColor": false
+}

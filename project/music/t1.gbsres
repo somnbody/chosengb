@@ -1,0 +1,11 @@
+{
+  "_resourceType": "music",
+  "id": "f7a07042-fede-4c83-9efd-5183c2a78cfb",
+  "name": "t1",
+  "symbol": "song_t1",
+  "filename": "t1.mod",
+  "settings": {
+    "disableSpeedConversion": true
+  },
+  "type": "mod"
+}

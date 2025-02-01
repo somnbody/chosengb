@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "7e748e7d-60ce-4db2-8ed4-50a069bed0f6",
+  "name": "good_1",
+  "symbol": "bg_good_1",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "good_1.png",
+  "tileColors": "",
+  "autoColor": false
+}
